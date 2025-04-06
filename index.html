@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sujal's Homework Help - Submit Homework</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <main class="max-w-xl mx-auto p-6">
+    <h1 class="text-2xl font-bold text-center mb-4">📘 Submit Your Homework</h1>
+    <form onsubmit="redirectToPayment(); return false;" class="bg-white p-4 rounded-lg shadow space-y-4">
+      <input type="text" placeholder="Full Name" required class="w-full p-2 border rounded" />
+      <input type="email" placeholder="Email" required class="w-full p-2 border rounded" />
+      <input type="tel" placeholder="Phone Number" required class="w-full p-2 border rounded" />
+      <input type="text" placeholder="Class" required class="w-full p-2 border rounded" />
+      <input type="text" placeholder="Subject" required class="w-full p-2 border rounded" />
+      <textarea placeholder="Homework Details" required class="w-full p-2 border rounded"></textarea>
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full">
+        Continue to Payment
+      </button>
+    </form>
+  </main>
+
+  <script>
+    function redirectToPayment() {
+      window.location.href = "payment.html";
+    }
+  </script>
+</body>
+</html>
